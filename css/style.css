@@ -12,7 +12,8 @@ body {
   display: none; }
 
 .member:hover img.sepia {
-  display: inline-block; }
+  display: inline-block;
+  transform: translateY(-15px) scale(1.1); }
 
 #team-members {
   clear: both; }
@@ -20,7 +21,7 @@ body {
 #team-members .member {
   float: left;
   /*  border: 1px solid gray;*/
-  margin: 10px;
+  margin: 15px;
   padding: 6px;
   min-width: 220px;
   min-height: 220px;
@@ -28,6 +29,7 @@ body {
 
 #team-members .member img {
   width: 200px;
-  height: 200px; }
+  height: 200px;
+  border-radius: 100%; }
 
 /*# sourceMappingURL=style.css.map */
