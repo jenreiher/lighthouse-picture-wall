@@ -1,33 +1,38 @@
 $primaryColor: #FF0000;
 
 body {
+
+  font-family: Verdana;
+  font-size: 1.5em;
+
     h1 {
     color: $primaryColor;
   }
-  font-family: Verdana;
-  font-size: 1.5em;
+
 }
 
-/* TODO make me more DRY */
 .member img.sepia  {
   display: none;
 }
 
-.member:hover img.standard {
-  display: none;
+.member:hover {
+  img.sepia {
+    display: inline-block;
+    transform: translateY(-15px) scale(1.1);
+  }
+
+  img.standard {
+    display: none;
+  }
+  
 }
 
-.member:hover img.sepia {
-  display: inline-block;
-  transform: translateY(-15px) scale(1.1);
-}
 
 
 #team-members {
   clear: both;
-}
 
-#team-members .member {
+  .member {
   float: left;
 /*  border: 1px solid gray;*/
   margin: 15px;
@@ -35,10 +40,13 @@ body {
   min-width: 220px;
   min-height: 220px;
   text-align: center;  
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+
 }
 
-#team-members .member img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-}
